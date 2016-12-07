@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-const HEROS: Hero[] = [
+const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice' },
   { id: 12, name: 'Narco' },
   { id: 13, name: 'Bombasto' },
@@ -17,18 +17,18 @@ const HEROS: Hero[] = [
   selector: 'my-app',
   template: `
     <h1>{{title}}</h1>
-    <h2>{{hero.name}} details!</h2>
-    <div><label>id: </label>{{hero.id}}</div>
-    <div>
-      <label>name: </label>
-      <input [(ngModel)]="hero.name" placeholder="name">
-    </div>
+    <h2>My Heroes</h2>
+    <ul class="heroes">
+      <li>
+        <!-- each hero goes here -->
+      </li>
+    </ul>
   `,
 })
 
 export class AppComponent  {
   title = 'Tour of Heros';
-  heros = HEROS;
+  heroes = HEROES;
 }
 
 export class Hero {
