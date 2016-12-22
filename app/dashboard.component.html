@@ -6,3 +6,4 @@
     </div>
   </div>
 </div>
+<a *ngFor="let hero of heroes" [routerLink]="['/detail', hero.id]" class="col-l-4">
