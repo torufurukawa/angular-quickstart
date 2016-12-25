@@ -12,7 +12,7 @@ import { AppRoutingModule }    from './app-routing.module';
 
 
 @NgModule({
-  imports:      [
+  imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule
